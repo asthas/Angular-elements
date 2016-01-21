@@ -1,7 +1,7 @@
 angular.module('greetings')
 	.directive('message', function() {
 		return {
-			restrict: 'E',
+			restrict: 'M',
 			link: function() {
 				alert('Bad day!');
 			}
