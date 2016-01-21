@@ -8,7 +8,7 @@ angular.module('greetings', [])
 	.directive('enter', function() {
 		return function(scope, element, attrs) {
 			element.bind('mouseenter', function(){
-				scope.fun.start();
+				scope.$apply(attrs.enter);
 			})
 		}
 	})
