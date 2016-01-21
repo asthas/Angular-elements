@@ -1,16 +1,16 @@
 angular.module('greetings', [])
 	.directive('enter', function(){
-		return function(scope, element) {
+		return function(scope, element, attrs) {
 			element.bind("mouseenter", function() {
-				element.addClass('activeClass');
+				element.addClass(attrs.enter);
 			})
 		}
 	})
 	
 	.directive('leave', function(){
-		return function(scope, element) {
+		return function(scope, element, attrs) {
 			element.bind("mouseleave", function() {
-				element.removeClass('activeClass');
+				element.removeClass(attrs.enter);
 			})
 		}
 	})
