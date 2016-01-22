@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="main.css">
 </head>
 <body ng-app="app" ng-controller="testCtrl as test">
+	<button ng-click="test.showBoxOne = !test.showBoxOne">Click me!</button>
 	<div class="box-one" ng-show="test.showBoxOne">
 		Hello! I am <b>box one</b>
 	</div>
