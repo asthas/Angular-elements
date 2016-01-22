@@ -1,0 +1,9 @@
+.box-one {
+	background: #f00;
+	-webkit-transition: all linear 0.5s;
+	transition: all linear 5s;
+}
+
+.box-one.ng-hide {
+	opacity: 0.5;
+}
