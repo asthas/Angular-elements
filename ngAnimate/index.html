@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.1/angular.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/angularjs/1.4.7/angular-animate.min.js"></script>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body ng-app="app" ng-controller="TestCtrl as test">
+	<button ng-click="test.people.push({name: 'Steve Jobs'})">Add item to ng-repeat</button>
+	<button ng-click="test.people.pop()">Remove items from ng-repeat</button>
+	<div class="item" ng-repeat="person in test.people">
+		{{person.name}}
+	</div>
+	<script src="app.js"></script>
+</body>
+</html>
